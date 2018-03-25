@@ -10,6 +10,7 @@ body {
 			width: 100%;
 			height: 6rem;
 			text-align: center;
+			z-index: 1;
 		}
 		.border {
 			border: solid;
@@ -17,20 +18,31 @@ body {
 			border-bottom-color: #E1E5E7;
 		}
 		.menu {
-			margin-top: 6rem;
-			position: relative;
+			position: fixed;
+			top: 6rem;
 			width: 100%;
 			height: 5rem;
+			z-index: 2;
+		}
+		.header-space {
+			position: relative;
+			margin: 9.4rem 0 0;
 		}
 		.contact {
 			width: 100%;
 			height: 11.25rem;
+			font-size: 1.8rem;
+		}
+		.footer-space {
+			position: relative;
+			margin: 6.25rem 0 0;
 		}
 		.footer {
-			position: absolute;
+			position: fixed;
 			bottom: 0rem;
 			left: 0rem;
 			right: 0rem;
+			text-align: center;
 			background-color: #F8FAFB;
 			width: 100%;
 			height: 6.25rem;
@@ -39,47 +51,74 @@ body {
 			background: url(sprite.png);
 		}
 		.icon1 {
-			background-position: 0 0;
+			background-position: 0px -67px;
+			background-size: 260%;
 		}
 		.icon2 {
-			background-position: 0 84px;
+			background-position: 20px -20px;
+			background-size: 500%;
 		}
 		.icon3 {
-			background-position: 46px 96px;
+			background-position: 24px 0px;
 		}
 		.icon4 {
-			background-position: 46px 139px;
+			background-position: 76px -138px;
+			color: #5FC0CD;
 		}
 		.icon5 {
-			background-position: 96px 0;
+			background-position: 0px 0px;
+			width: 6.2rem;
+			height: 6.25rem;
+			border: none;
+			background-size: 128%;
 		}
 		.icon6 {
-			background-position: 96px 26px;
+			background-position: 78px -95px;
+			color: #999;
 		}
 		.icon7 {
-			background-position: 96px 52px;
+			background-position: 24px -50px;
 		}
 		.grey-line {
+			position: absolute;
+    		right: .1rem;
+    		bottom: .8rem;
 			width: .1rem;
 			height: 3.5rem;
 			background-color: #E1E5E7
 		}
 		.map {
-			float: right;
-			margin: .8rem 1rem 0 0;
+			position: absolute;
+			top: .8rem;
+			right: .5rem;
 			width: 2.75rem;
 			height: 2.75rem;
 			border: none;
 		}
-		.dingbu {
+		.header-button {
 			display: inline-block;
-			margin: .8rem 0 0 3.75rem;
-			line-height: 6rem;
-			width: 17.4rem;
-			height: 4.4rem;
+			margin: 1.3rem 0 0;
+			line-height: 2.5rem;
+			width: 6.4rem;
+			height: 3.4rem;
+			font-size: 1.6rem;
     		vertical-align: middle;
-			border-radius: 1rem;
+    		border: none;
+			border-radius: .6rem;
 			background-color: #55A8B3;
+		}
+		.header-button-zoom {
+			position: absolute;
+   			top: 1.3rem;
+    		right: 47vw;
+    		left: 47vw;
+   			width: 6rem;
+   			height: 3.4rem;
+   			font-size: 1.6rem;
+   			vertical-align: middle;
+   			border: none;
+   			border-radius: .6rem;
+    		background-color: #55A8B3;
 		}
 		.leftbutton {
 			float: left;
@@ -107,4 +146,83 @@ body {
     		text-decoration: none;
     		display: inline-block;
     		font-size: 2rem;
+		}
+		.contact-data {
+			float: left;
+			width: 20px;
+			height: 22px;
+		}
+		.data {
+			position: relative;
+			top: 1.2rem;
+			left: 1rem;
+			width: 90%;
+			height: 3.75rem;
+			font-size: 1.8rem;
+			color: #999;
+		}
+		.info {
+			width: 100%;
+			height: 3.75rem;
+			line-height: 3.75rem;
+		}
+		.info-left {
+			width: 60%;
+			float: left;
+			padding-left: 3.5rem;
+			box-sizing: border-box;
+			text-overflow: ellipsis; 
+			white-space: nowrap; 
+			overflow: hidden;
+		}
+		.info-right {
+			width: 40%;
+			float: right;
+			text-align: right;
+			color: #E63B0E
+		}
+		.contact-position {
+			position: relative;
+			left: 1rem;
+			top: .15rem;
+			width: 90%;
+			height: 3.75rem;
+			color: #999;
+		}
+		.right-arrow {
+			margin: 0 1rem 0 .5rem;
+			padding-bottom: .5rem;
+			width: 1.2rem;
+			height: 2rem;
+			border: none;
+			background-color: #FFF;
+			background-image: url(right-arrow.png);
+			background-size: cover;
+		}
+		.footer-button {
+			width: 4.2rem;
+			height: 3.5rem;
+			border: none;
+		}
+		.footer-small {
+			padding: .8rem 0 0;
+		}
+		.menu-drop {
+			padding: 0;
+			border-radius: 0;
+		}
+		.drop {
+			color: #999;
+			height: 5rem;
+			width: 100%;
+			border-radius: 0;
+			font-size: 1.6rem;
+			background-color: #FFF;
+		}
+		.drop-arrow {
+			position: absolute;
+    		right: .5rem;
+    		bottom: 2rem;
+    		width: 1.1rem;
+    		height: 1rem;
 		}

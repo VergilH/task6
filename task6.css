@@ -51,8 +51,8 @@ body {
 			background: url(sprite.png);
 		}
 		.icon1 {
-			background-position: 0px -67px;
-			background-size: 260%;
+			background-position: 5px -50px;
+    		background-size: 220%;
 		}
 		.icon2 {
 			background-position: 20px -20px;
@@ -89,11 +89,12 @@ body {
 		}
 		.map {
 			position: absolute;
-			top: .8rem;
+			top: .9rem;
 			right: .5rem;
-			width: 2.75rem;
-			height: 2.75rem;
+			width: 30px;
+			height: 30px;
 			border: none;
+			padding: 0 0;
 		}
 		.header-button {
 			display: inline-block;
@@ -102,7 +103,6 @@ body {
 			width: 6.4rem;
 			height: 3.4rem;
 			font-size: 1.6rem;
-    		vertical-align: middle;
     		border: none;
 			border-radius: .6rem;
 			background-color: #55A8B3;
@@ -169,7 +169,7 @@ body {
 		.info-left {
 			width: 60%;
 			float: left;
-			padding-left: 3.5rem;
+			padding-left: 3.6rem;
 			box-sizing: border-box;
 			text-overflow: ellipsis; 
 			white-space: nowrap; 
@@ -197,15 +197,16 @@ body {
 			border: none;
 			background-color: #FFF;
 			background-image: url(right-arrow.png);
-			background-size: cover;
+			background-size: 100%;
 		}
 		.footer-button {
-			width: 4.2rem;
-			height: 3.5rem;
+			width: 50px;
+			height: 42px;
 			border: none;
+			padding: 0 0;
 		}
 		.footer-small {
-			padding: .8rem 0 0;
+			padding: .5rem 0 0;
 		}
 		.menu-drop {
 			padding: 0;
